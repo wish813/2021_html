@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Link(이동) : a 태그</title>
+<style type="text/css">
+	a:link{color:pink}
+	a:visited {color:lime;}
+	a:active {color:darkgray;}
+	a:hover {background-color:Indigo;}
+	a{text-decoration: none;}
+	
+</style>
+</head>
+<body>
+	<!-- 이메일 링크 : mailto: 이메일주소 -->
+	<a href="mailto:wish813@naver.com"> 개발자에게 문의</a>
+	<br>
+	<!-- button 태그의 링크 onclick 속성을 이용
+		 태그 속성이 onXXXXXX 이면 무조건 자바 스크립트 사용하자 
+		 <button onclick = "자바스크립트함수호출">
+		 자바스크립트에서 document.location은 다른 페이지로 이동하는 명령
+		 document.location => 이동 명령어 document는 생략 가능
+		 -->
+		 
+		 <button onclick="document.location='ex01.html'"> 문서1 </button>
+		 <hr>
+		 
+		 <!-- 
+		 	a 링크 기본색     => CSS 변경
+		 	방문전 : blue,    => a:link {원하는 색상}
+		 	방문 후 purple,   => a:visitied {원하는 색상}
+		 	활성화 : red      => a:active {원하는 색상}
+		 						 a:hover
+		 	 -->
+		 	 <a href="#"> 현재 문서</a>
+		 	 
+		 	 
+		 	 
+		 
+</body>
+</html>
